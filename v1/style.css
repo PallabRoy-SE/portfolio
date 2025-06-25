@@ -65,6 +65,8 @@ button {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 button:hover {
@@ -113,8 +115,8 @@ nav .actions {
 nav .actions .action-btn {
   font-size: 1em;
   font-weight: 400;
-  transition: 0.2s all ease-in-out;
 }
+
 nav .actions .action-btn:hover {
   text-decoration: underline;
 }
