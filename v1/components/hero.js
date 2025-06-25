@@ -7,8 +7,8 @@ export default function Hero({ role, name, description }) {
          <h1>Hello, my name is ${name}</h1>
          <p>${description}</p>
          <section class="button-container">
-            <button>Projects</button>
-            <button>LinkedIn</button>
+            <button class="primary-btn">Projects</button>
+            <button class="secondary-btn">LinkedIn</button>
          </section>
       </section>
       <section class="image-container">

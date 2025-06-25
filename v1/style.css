@@ -49,10 +49,36 @@ body {
   background-color: var(--background-color);
 }
 
+button {
+  border: none;
+  outline: none;
+  color: var(--secondary-color);
+  min-width: 117px;
+  min-height: 43px;
+  padding: 0 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px 0px #80808075;
+}
+
 .container {
   margin-inline: auto;
   width: var(--container-width);
   max-width: var(--container-max-width);
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border-color: var(--secondary-color);
 }
 
 /* Navbar */
@@ -92,6 +118,7 @@ nav .actions .action-btn {
 section.hero-container {
   display: flex;
   flex-flow: row nowrap;
+  margin-top: 40px;
 }
 
 .hero-container section {
@@ -119,12 +146,19 @@ section.hero-container {
   width: inherit;
 }
 
+section.text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
 .hero-container section.text-container h4 {
   font-size: 1.25em;
   font-family: var(--font-nunito);
   font-weight: 700;
   text-transform: uppercase;
   color: var(--primary-color);
+  line-height: 1;
 }
 
 .hero-container section.text-container h1 {
@@ -141,4 +175,11 @@ section.hero-container {
   font-weight: 500;
   line-height: 150%;
   color: var(--tertiary-color);
+}
+
+.hero-container section.text-container section.button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 15px;
 }
