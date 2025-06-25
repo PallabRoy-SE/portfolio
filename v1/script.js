@@ -7,7 +7,9 @@ async function main() {
     const root = document.getElementById('root');
 
     root.appendChild(Navbar({ title: config.title })); // add navbar
-    root.appendChild(Hero({ role: config.role, name: config.title, description: config.description }));
+    root.appendChild(
+      Hero({ role: config.role, name: config.title, description: config.description, isProd: config.prod })
+    );
   } catch (error) {
     console.error(error);
   }

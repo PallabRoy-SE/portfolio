@@ -1,4 +1,4 @@
-export default function Hero({ role, name, description }) {
+export default function Hero({ role, name, description, isProd = false }) {
   const hero = document.createElement('section');
   hero.classList.add(...['hero-container', 'container']);
   hero.innerHTML = `
@@ -13,7 +13,7 @@ export default function Hero({ role, name, description }) {
       </section>
       <section class="image-container">
         <div class="mask">
-            <img src="../assets/images/hero.png" alt="Hero image">
+            <img src="${isProd ? '/portfolio/assets/images/hero.png' : '../assets/images/hero.png'}" alt="Hero image">
         </div>
       </section>`;
   return hero;
