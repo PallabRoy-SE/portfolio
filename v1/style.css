@@ -49,6 +49,11 @@ body {
   background-color: var(--background-color);
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 button {
   border: none;
   outline: none;
@@ -56,10 +61,12 @@ button {
   min-width: 117px;
   min-height: 43px;
   padding: 0 15px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s all ease-in-out;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 button:hover {
@@ -106,12 +113,12 @@ nav .actions {
 }
 
 nav .actions .action-btn {
-  background-color: transparent;
-  border: none;
-  outline: none;
   font-size: 1em;
-  cursor: pointer;
   font-weight: 400;
+}
+
+nav .actions .action-btn:hover {
+  text-decoration: underline;
 }
 
 /* Hero section */
