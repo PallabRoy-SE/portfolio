@@ -3,9 +3,9 @@ export default function Navbar({ title }) {
   nav.classList.add('container');
   nav.innerHTML = `<span class="title">${title}</span>
     <section class="actions">
-        <button class="action-btn">Projects</button>
-        <button class="action-btn">About</button>
-        <button class="action-btn">Contacts</button>
+        <a href="#" class="action-btn">Projects</a>
+        <a href="#" class="action-btn">About</a>
+        <a href="#" class="action-btn">Contacts</a>
     </section>`;
   return nav;
 }
